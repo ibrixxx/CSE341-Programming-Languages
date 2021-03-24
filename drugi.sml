@@ -1,3 +1,4 @@
+(*distribution of items in wich each next reaciver getsn n+1 items*)  
 fun boba (a : int , b : int, i : int) = 
   if b - i < 0
   then b::[]
