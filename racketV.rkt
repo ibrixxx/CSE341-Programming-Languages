@@ -76,7 +76,7 @@
   (let ([a (* (car xs) (car (cdr xs)) (car (cdr (cdr xs))))])
     (cond [(and (=(length xs) 3) (= m 0)) a] 
           [(null? (cdr (cdr (cdr xs)))) (max a m)]
-          [(>(* a m)) (maxProd (cdr xs) a)]
+          [(> a m) (maxProd (cdr xs) a)]
           [#t (maxProd (cdr xs) m)])))
 
 (define (bigtr xs)
